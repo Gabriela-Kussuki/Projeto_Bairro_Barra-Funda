@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding: 25vh;
+}
+
+img {
+	width: 100%;
+}
+
+a, p, li, div {
+	font-family: 'Arvo', serif;
+	font-size: 1.1rem;
+	color: #000;
+}
+
+p, h3 {
+	text-align: center;
+}
+
+
+h1, h2, h3 {
+	font-family: 'DM Serif Display', serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+nav {
+	padding: 36px 0;
+	background-color: #fff;
+	box-shadow: 0px 12px 17px #0000009c;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+nav ul li {
+	margin-left: 45px;
+}
+
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+button {
+	background-color: #222EB3;
+	border-radius: 34px;
+	padding: 15px;
+	width: 13vw; 
+	border: 0;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+
+button > a {
+	color: #fff;
+	text-align: center;
+}
+
+button:hover {
+	background-color: #222eb39f;
+	color: #fff;
+}
+
+/* INTRODUCAO */
+
+#introducao {
+	position: relative;
+}
+
+#introducao p, h1 {
+	color: #fff;
+	position: absolute;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 8rem;
+	top: 250px;
+	width: 100%;
+	text-align: center;
+}
+
+#introducao p {
+	top: 420px;
+	width: 50vw;
+	font-size: 1.6rem;
+	left: 25%;
+}
+
+/* INFO-DEMOGRAFICAS */
+
+#info-demog {
+	display: flex;
+	margin: 80px 100px 50px;
+}
+
+#info-demog img {
+	width: 3vw;
+	margin: 15px;
+}
+
+.card-d {
+	background-color: #131A66;
+	padding: 30px;
+	color: #fff;
+	width: 25vw;
+	margin-right: 20px;
+	margin: 0 auto;
+}
+
+.card-d p {
+	font-size: 2rem;
+	color: #fff;
+	margin-top: 20px;
+}
+
+/* HISTORIA */
+
+#historia > p {
+	width: 60vw;
+	margin: 20px auto;
+	position: relative;
+}
+
+#menu-hist {
+	margin: 0 100px;
+	width: 87.5vw;
+}
+
+#fundinho {
+	background-color: #fff;
+	width: 100%;
+	position: sticky;
+	top: 14vh;
+	padding: 10px 0;
+	z-index: 10;
+}
+
+#menu-hist ul {
+	list-style: none;
+	display: flex;
+}
+
+#menu-hist ul a {
+	background-color: #737CEA80;
+	padding: 30px 14.4%;
+	font-size: 1.5rem;
+	transition: background-color .3s;
+}
+
+#menu-hist ul a:hover {
+	background-color: #737dea;
+}
+
+.data {
+	background: #B8B8B8;
+	padding: 60px 30px;
+	margin: 40px 100px;
+	position: relative;
+	display: none;
+}
+
+.fundo-h {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	background-color: #E7E7E7;
+	top: 0;
+	left: 0;
+}
+
+.data p {
+	text-align: right;
+	margin-right: 15px;
+	margin-left: 60px;
+	position: relative;
+	z-index: 1;
+	line-height: 30px;
+}
+
+.data img {
+	width: 35vw;
+	margin-right: 60px;
+	position: relative;
+	z-index: 1;
+}
+
+.data:target {
+	display: flex;
+}
+
+/* LOCALIZACAO */
+
+#localizacao {
+	margin: 50px 100px;
+	position: relative;
+	padding: 50px;
+	color: #fff;
+}
+
+#localizacao > h2{
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+#localizacao iframe {
+	box-shadow: 5px 14px 7px 0px #00000069;
+	height: 80vh;
+}
+
+#conteudo-l {
+	display: flex;
+}
+
+#conteudo-l > div {
+	width: 40%;
+	margin-right: 100px;
+}
+
+#conteudo-l > div > p {
+	color: #fff;
+	text-align: left;
+	line-height: 30px;
+}
+
+#fundo-l {
+	background-color: #222EB3;
+	width: 85%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	background-color: #131A66;
+}
+
+footer div {
+	margin: 100px;
+	color: #fff;
+}
+
+#comentario form{
+	margin: 30px 0;
+	text-align: left;
+}
+
+label {
+	font-size: 1.5rem;
+}
+
+input, textarea {
+	background-color: #D9D9D9;
+	border-radius: 24px;
+	padding: 15px;
+	width: 100%;
+	font-family: 'Arvo', serif;
+	font-size: 1rem;
+}
+
+#redes p{
+	color: #fff;
+	margin: 30px 0;
+	font-size: 1.5rem;
+}
+
+footer button {
+	margin: 30px 0;
+	color: #000;
+	background-color: #fff;
+}
+
+#redes img {
+	width: 20vw;
+}
+
+#paginas {
+	margin: 0;
+}
+
+#paginas div {
+	margin: 30px 10px;
+}
+
+#paginas a {
+	color: #fff;
+}
+
+#paginas a:hover {
+	text-decoration: underline;
+}
+
+/* CULTURA */
+
+#intro {
+	display: flex;
+}
+
+#intro p {
+	font-size: 3rem;
+	width: 50vw;
+	margin: 30vh 100px;
+	color: #fff;
+}
+
+#intro img {
+	width: 60vw;
+}
+
+#fundo-c {
+	background-color: #131A66;
+	width: 100%;
+	height: 70vh;
+	position: absolute;
+	top: 26vh;
+	z-index: -1000000;
+}
+
+#conteudo-cult {
+	margin: 0 90px 80px;
+	position: relative;
+	padding: 30px 0;
+}
+
+.card {
+	position: relative;
+}
+
+.card > div{
+	display: flex;
+	padding-top: 60px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.card p {
+	width: 30vw;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+.card img {
+	margin-top: 30px;
+	width: 40vw;
+}
+
+.right {
+	left: 7%;
+}
+
+.right > img {
+	margin-left: 100px;
+}
+
+.left > img{
+	margin-right: 50px;
+}
+
+#fundo-cc {
+	background-color: #DFE1F6;
+	height: 100%;
+	width: 90%;
+	left: 50px;
+	position: absolute;
+	top: 0;
+	z-index: -10000;
+}
+
+hr {
+	border: solid 1px;
+	display: block;
+	margin: 30px;
+	width: 35%;
+}
+
+.linha {
+	position: relative;
+	left: 58%;
+}
+
+/* MAIS  - ÍNDICE*/
+
+main > img {
+	position: absolute;
+	top: 18vh;
+}
+
+#voltar {
+	background-color: #fff;
+	box-shadow: 4px 5px 10px #000;
+	padding: 14px;
+	border-radius: 100px;
+	width: 4vw;
+	height: 8vh;
+	position: fixed;
+	right: 5px;
+	bottom: 10px;
+	transition: background-color .5s;
+}
+
+#voltar img {
+	width: 2vw;
+}
+
+#voltar:hover {
+	background-color: #222EB3;
+}
+
+#indice {
+	margin-top: 30vh;
+	margin-left: 100px;
+	width: 20vw;
+	display: flex;
+	position: relative;
+	padding: 20px;
+}
+
+#indice ol {
+	background-color: #737dea;
+}
+
+#indice ol li {
+	padding: 10px;
+	font-size: 2rem;
+	color: #737dea;
+	text-align: left;
+	margin-bottom: 10px;
+	transition: background-color .3s;
+}
+
+#indice ol li:hover {
+	background-color: #3444f0;
+}
+
+#indice ol li a{
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: underline;
+}
+
+#video iframe {
+	margin-left: 100px;
+	margin-bottom: 50px;
+	box-shadow: 0 0 50px #222EB3;
+	height: 41.35vh;
+}
+
+/* LAZER */
+
+#lazer {
+	margin: 0 100px;
+	line-height: 40px;
+	position: relative;
+}
+
+.lugar {
+	background-color: #F5F5F5;
+	display: flex;
+	padding: 50px;
+	position: relative;
+	margin: 50px 0;
+	height: 90vh;
+}
+
+.lugar p, .lugar h3 {
+	text-align: left;
+}
+
+.lugar .conteudo {
+	width: 40vw;
+	margin-right: 30px;
+}
+
+.lugar .conteudo p {
+	margin-top: 40px;
+}
+
+.lugar img {
+	width: 30vw;
+	position: relative;
+	z-index: 2;
+}
+
+.conteudo {
+	position: relative;
+}
+
+.lugar button {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	margin-top: 30px;
+}
+
+.fundo-lzr {
+	background-color: #737CEA;
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+/* RESTAURANTES */
+
+#restaurantes > div {
+	background-color: #222EB3;
+	margin: 50px 100px;
+	box-shadow: 5px 10px 10px #00000040;
+}
+
+#restaurantes img {
+	width: 30vw;
+}
+
+.restaurante {
+	padding: 50px;
+	display: flex;
+	position: relative;
+	z-index: 1;
+}
+
+.restaurante p {
+	color: #fff;
+	line-height: 30px;
+	margin-right: 20px;
+}
+
+.restaurante a {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.3rem;
+	text-decoration: underline;
+}
+
+.fundo-r {
+	background-color: #F1F1F1;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+/* COMERCIO */
+
+#industria {
+	display: flex;
+	margin: 30px 100px;
+	position: relative;
+	box-shadow: 0px 12px 23px #00000061;
+}
+
+#comercio > div p{
+	margin: 40px 80px;
+	line-height: 30px;
+}
+
+#lojas {
+	position: relative;
+}
+
+#lojas > p {
+	font-size: 2rem;
+}
+
+#lojas #logos{
+	display: flex;
+	margin-left: 33%;
+	margin-bottom: 40px;
+}
+
+#logos img{
+	background-color: #131A66;
+	padding: 10px;
+	width: 13vw;
+	margin-left: 40px;
+	transition: background-color .3s;
+}
+
+#logos img:hover{
+	background-color: #222EB3;
+	cursor: pointer;
+}
+
+#lojas .img-c {
+	width: 30vw;
+}
+
+.conteudoc {
+	padding: 30px 70px;
+	display: none;
+	background-color: #131A66;
+}
+/* 
+#brb {
+	display: none;
+}
+
+#big {
+	display: none;
+} */
+
+.conteudoc p {
+	width: 40vw;
+	color: #fff;
+}
+
+.conteudoc:target {
+	display: flex;
+}
+
+/* EDUCAÇÃO */
+
+#educacao {
+	padding: 30px;
+	margin-top: 100px 0;
+	background-color: #737dea;
+}
+
+#educacao > div {
+	padding: 30px;
+	display: flex;
+	margin: 70px auto;
+	position: relative;
+}
+
+#educacao > div > p {
+	line-height: 40px;
+	margin-left: 30px;
+	position: relative;
+	top: 30px;
+}
+
+#educacao a {
+	text-decoration: underline;
+	font-size: 1.25rem;
+	transition: color .3s;
+}
+
+#educacao a:hover {
+	color: #222EB3;
+}
